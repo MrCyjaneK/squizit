@@ -1,0 +1,15 @@
+{
+    "name": "squizit.anon",
+    "description": "Squizit",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Squizit",
+    "hooks": {
+        "squizit": {
+            "apparmor": "squizit.apparmor",
+            "desktop":  "squizit.desktop"
+        }
+    },
+    "version": "1.0.2.BUILD_VERSION_CODE",
+    "maintainer": "anon <anon@domain.tld>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}

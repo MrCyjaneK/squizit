@@ -1,0 +1,8 @@
+dist/out
+packrd
+*-packr.go
+tmp/
+build/
+*.deb
+doc-pak
+webui/html

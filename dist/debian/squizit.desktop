@@ -1,0 +1,9 @@
+[Desktop Entry]
+GenericName=Squizit
+Name=Squizit
+Exec=squizit %U
+Icon=squizit
+Type=Application
+Terminal=true
+Categories=Utility;
+Comment=Squizit is a hack for Quizizz!
