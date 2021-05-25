@@ -80,8 +80,8 @@ do
     cp ../dist/ubtouch ubtouch-$arch -r
     cd $goprodbuilds/ubtouch-$arch/
     clickable clean
-    cp "$goprodbuilds/bin/squizit-ubtouch_linux_$arch" $(find . -name jwlib.bin)
-    chmod +x $(find . -name jwlib.bin)
+    cp "$goprodbuilds/bin/squizit-ubtouch_linux_$arch" $(find . -name libbin.so)
+    chmod +x $(find . -name libbin.so)
     sed -i 's/BUILD_VERSION_CODE/'$vcode'/g' manifest.json.in
     archC=$arch
     if [[ "$arch" == "arm" ]];
@@ -117,8 +117,8 @@ then
             cp "$goprodbuilds/bin/squizit_android_amd64" "$goprodbuilds/android-target-$arch/app/src/main/jniLibs/x86_64/libbin.so"
             ;;
         "386")
-            cp "$goprodbuilds/bin/squizit_android_386"   "$goprodbuilds/android-target-$arch/app/src/main/resources/lib/x86/jwlib.bin"
-            cp "$goprodbuilds/bin/squizit_android_386"   "$goprodbuilds/android-target-$arch/app/src/main/jniLibs/x86/jwlib.bin"
+            cp "$goprodbuilds/bin/squizit_android_386"   "$goprodbuilds/android-target-$arch/app/src/main/resources/lib/x86/libbin.so"
+            cp "$goprodbuilds/bin/squizit_android_386"   "$goprodbuilds/android-target-$arch/app/src/main/jniLibs/x86/libbin.so"
             ;;
         "arm")
             cp "$goprodbuilds/bin/squizit_android_arm"   "$goprodbuilds/android-target-$arch/app/src/main/resources/lib/armeabi-v7a/libbin.so"
