@@ -17,7 +17,6 @@ List of web instances [Host your own!](#host-on-your-site)
 -->
  - [squizit.sivaj.pl](https://squizit.sivaj.pl/) <span id="squizitsivajpl"></span>
  - [squizit.cf](https://squizit.cf) <span id="squizitcf"></span>
- - [beta.squizit.cf](https://beta.squizit.cf/) <span id="betasquizitcf"></span>
  - Backend Server <span id="backend"></span>
  - Downloads Server <span id="downloads"></span>
 
@@ -46,9 +45,9 @@ function updateVersion(url, name) {
 }
 setTimeout(() => updateVersion("https://squizit.sivaj.pl", "squizitsivajpl"))
 setTimeout(() => updateVersion("https://squizit.cf", "squizitcf"))
-setTimeout(() => updateVersion("https://beta.squizit.cf", "betasquizitcf"))
+//setTimeout(() => updateVersion("https://beta.squizit.cf", "betasquizitcf"))
 setTimeout(() => updateVersion("https://squiz.mrcyjanek.net", "backend"))
-setTimeout(() => updateVersion("https://static.mrcyjanek.net", "downloads"))
+setTimeout(() => updateVersion("https://static.mrcyjanek.net/laminarci/build-squizit/latest", "downloads"))
 </script>
 
 # Downloads
