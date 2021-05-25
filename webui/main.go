@@ -2,6 +2,7 @@ package webui
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"log"
 	"math/rand"
@@ -117,6 +118,9 @@ func Start() {
 	Port = 15932 // Sorry for hardcoding
 	html := packr.New("webui", "./html")
 	http.Handle("/", http.FileServer(html))
+	vappend := flag.String("version", "", "Append something to version :)")
+	flag.Parse()
+	version = version + " " + *vappend
 	http.HandleFunc("/api/hack", apiHack)
 	http.HandleFunc("/api/version", apiVersion)
 	//http.HandleFunc("/api/answers", apiAnswers)
